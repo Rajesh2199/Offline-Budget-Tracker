@@ -10,7 +10,7 @@
 
 
 ## Deployed Version
-* Click the link below to see the application in heroku
+* Click the link to see the application in heroku
 https://shrouded-tundra-90873.herokuapp.com/
 
 ## Application at Glance
