@@ -33,7 +33,14 @@ request.onupgradeneeded = function(event) {
     store.add(record);
   }
 
-
+  function checkDatabase() {
+    // open a transaction on your pending db
+    const transaction = db.transaction(["pending"], "readwrite");
+    // access your pending object store
+    const store = transaction.objectStore("pending");
+    // get all records from store and set to a variable
+    const getAll = store.getAll();
+  
 
 
 
