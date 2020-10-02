@@ -9,3 +9,13 @@ const FILES_TO_CACHE = [
     "/icons/icon-512x512.png",
     "/db.js",
 ];
+
+// install
+self.addEventListener("install", function (evt) {
+    evt.waitUntil(
+        caches.open(CACHE_NAME).then((cache) => 
+        cache.addAll(FILES_TO_CACHE))
+        );
+
+        self.skipWaiting();
+}); 
